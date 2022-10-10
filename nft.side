@@ -1,0 +1,302 @@
+{
+  "id": "4d1ab2af-2f8d-42f5-aa98-71952b090160",
+  "version": "2.0",
+  "name": "nft",
+  "url": "https://loopring.io/#/NFT/assetsNFT/byList",
+  "tests": [{
+    "id": "ea1d9d3e-3d1d-4bb2-a1b6-866b60077642",
+    "name": "nft",
+    "commands": [{
+      "id": "ab49fe00-8b1c-40fa-8ac8-6d8dfd81ded7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"cipherlab.loopring.eth\", \"another.loopring.eth\"]",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "b2813364-2907-4127-987f-f6a457d12a8e",
+      "comment": "",
+      "command": "open",
+      "target": "https://loopring.io/#/NFT/assetsNFT/byList",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a5be48b-2f26-41b3-b3d3-bcf1ae4aae41",
+      "comment": "",
+      "command": "forEach",
+      "target": "x",
+      "targets": [],
+      "value": "itr"
+    }, {
+      "id": "cb0998d7-319a-4a29-a371-3afd6baf6866",
+      "comment": "",
+      "command": "open",
+      "target": "https://loopring.io/#/NFT/assetsNFT/byList",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f986e198-43d3-4d55-a9d8-3c9e52d34b4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTab-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiTab-root:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d08d1981-63ed-418b-b7e9-42518b33f85f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='DRS Monkey 002']",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='DRS Monkey 002']", "xpath:img"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af15852f-5a2f-4c73-ba9b-0ac281e96237",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Send')]",
+      "targets": [
+        ["css=.css-mi3zu1", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Send')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "351e7c9b-aa2a-4285-95b6-131c9a1e8e19",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[32]",
+      "targets": [
+        ["css=.MuiBox-root:nth-child(5) .MuiBox-root:nth-child(2) > .MuiButton-root", "css:finder"],
+        ["xpath=(//button[@type='button'])[32]", "xpath:attributes"],
+        ["xpath=//div[5]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4ad2c48-6568-4660-9a1b-1999d4c1946d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[2]/div/input",
+      "targets": [
+        ["css=.css-1pdr2wn", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "e8f2cfee-21d0-4cfb-a535-0d10ac3e78fc",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='mui-11']",
+      "targets": [
+        ["id=mui-16", "id"],
+        ["css=#mui-16", "css:finder"],
+        ["xpath=//input[@id='mui-16']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "${itr}"
+    }, {
+      "id": "1bc91de4-515c-4038-913a-dda2ce91345d",
+      "comment": "",
+      "command": "pause",
+      "target": "150",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1414a93e-fe61-4518-9666-6294abbf67af",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.MuiTypography-body2",
+      "targets": [
+        ["css=.MuiTypography-body2", "css:finder"],
+        ["xpath=//div[3]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Cannot Send to another Loopring L2 to your own address.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ef22ee0-f2fa-4608-922c-b5946767dbd1",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//p[contains(.,'Invalid address or ENS')]",
+      "targets": [],
+      "value": "cntError1"
+    }, {
+      "id": "f5c5a854-07a5-4659-ba2f-2c53e8b67efe",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//p[contains(.,'Cannot Send to another Loopring L2 to your own address.')]",
+      "targets": [],
+      "value": "cntError2"
+    }, {
+      "id": "87befaaf-54be-4151-bef6-0bf55418c3e6",
+      "comment": "",
+      "command": "if",
+      "target": "${cntError1} <= 0 && ${cntError2} <= 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "396e50df-4467-4a8b-8215-18ac3dfd2f6d",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//p[contains(.,'Loopring Wallet')]",
+      "targets": [],
+      "value": "cntMenu"
+    }, {
+      "id": "176af078-b52d-4125-bcdd-f6c522f80b48",
+      "comment": "",
+      "command": "while",
+      "target": "${cntMenu} <= 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c6229ff-dea6-40ca-b9df-824db08d9d08",
+      "comment": "",
+      "command": "click",
+      "target": "id=mui-12",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b5afa1b-f12a-42e8-b885-3a9f4d4e492c",
+      "comment": "",
+      "command": "pause",
+      "target": "250",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50ab23f0-4053-4580-a2b7-bd6e57cb1055",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//p[contains(.,'Loopring Wallet')]",
+      "targets": [],
+      "value": "cntMenu"
+    }, {
+      "id": "e121896d-8559-4b4e-abaf-07896ff844fb",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d62d7637-c077-4e07-a3db-8fc05c5616ff",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//p[contains(.,'Loopring Wallet')]",
+      "targets": [
+        ["css=.MuiMenuItem-root:nth-child(3) > .MuiTypography-root > .MuiTypography-root", "css:finder"],
+        ["xpath=//div[@id='menu-']/div[3]/ul/li[3]/span/p", "xpath:idRelative"],
+        ["xpath=//li[3]/span/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Loopring Wallet')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e5cc640-8770-438f-8b43-0272bd054fab",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[27]",
+      "targets": [
+        ["css=.css-1uopwa8 > .MuiButton-root", "css:finder"],
+        ["xpath=(//button[@type='button'])[27]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div[2]/div/div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b31cf13c-525a-418d-a384-36522f6cec38",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[24]",
+      "targets": [
+        ["css=.css-1215gdq > .MuiButton-root", "css:finder"],
+        ["xpath=(//button[@type='button'])[24]", "xpath:attributes"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9c00434-8808-4f6c-97b1-4a1dd4d352b4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[65]/div/h3",
+      "targets": [
+        ["css=.css-1e63epu > .MuiBox-root > .MuiTypography-root", "css:finder"],
+        ["xpath=//div[65]/div/h3", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "80996a66-3af3-447c-bc62-d54d7ba166c3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[69]",
+      "targets": [
+        ["css=.MuiBox-root:nth-child(65) .MuiButton-root", "css:finder"],
+        ["xpath=(//button[@type='button'])[69]", "xpath:attributes"],
+        ["xpath=//div[65]/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e2275e6-2e6f-4b5b-b2b4-d39f852183c4",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba334623-a61f-4872-8b02-c0d71944f24a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "location.reload()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa247622-fcbd-4622-afd5-8db19796972d",
+      "comment": "",
+      "command": "open",
+      "target": "https://loopring.io/#/NFT/assetsNFT/byList",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02670005-a962-4202-8343-50aea71d6f24",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.MuiTab-root:nth-child(1)",
+      "targets": [],
+      "value": "2\\n000"
+    }, {
+      "id": "d4839d70-7412-420c-a910-d7dd3d895b4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiTab-root:nth-child(1)",
+      "targets": [
+        ["css=.MuiTab-root:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div/div/div/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "766fc320-51be-4ca7-89d1-b9cf6fb45d80",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7bfb06ca-82d7-446b-ab15-f5508d27dbfa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea1d9d3e-3d1d-4bb2-a1b6-866b60077642"]
+  }],
+  "urls": ["https://loopring.io/", "https://loopring.io/#/nft/assetsNFT", "https://loopring.io/#/NFT/assetsNFT/byCollection/0x081c9a00ddcb383f7ad02e74e82876015a09dd46|706", "https://loopring.io/#/NFT/assetsNFT/byList"],
+  "plugins": []
+}
